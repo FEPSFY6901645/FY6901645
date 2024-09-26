@@ -18,11 +18,13 @@ a {
   color: black;
 }
 
-a:link,
-a:visited,
-a:focus {
+a:link {
   background: orange;
   color: black;
+a:visited,
+a:focus {
+  background: darkred;
+  color: white;
 }
 
 a:hover {
