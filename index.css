@@ -19,7 +19,7 @@ a {
 }
 
 a:link {
-  background: orange;
+  background: #f3692c;
   color: black;
 a:visited,
 a:focus {
@@ -28,7 +28,7 @@ a:focus {
 }
 
 a:hover {
-  background: darkred;
+  background: #fbeb2b;
 }
 
 a:active {
