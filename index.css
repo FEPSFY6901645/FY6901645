@@ -21,12 +21,12 @@ a {
 a:link,
 a:visited,
 a:focus {
-  background: palegoldenrod;
+  background: orange;
   color: black;
 }
 
 a:hover {
-  background: orange;
+  background: darkred;
 }
 
 a:active {
