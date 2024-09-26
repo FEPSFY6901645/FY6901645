@@ -6,7 +6,7 @@ html {
 
 .container {
   display: flex;
-  gap: 0.625%;
+  gap: 0.75%;
 }
 
 a {
