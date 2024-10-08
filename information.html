@@ -33,13 +33,21 @@
             <td><a href="#references"> References</td>
         </tr>
     </table>
-    <p style="color:white";id="date&time"></p>
+    <h1 style="color:white"> Current date and time</h1>
+    <span id="datetime"></span>
 
     <script>
+        function updateDateTime() {
 
-    const d=new Date();
-    document.getElementById("date&time").innerHTML = d;
+            const now =new Date();
+            
+            const currentDateTime = now.toLocaleString();
+
+            document.querySelector('#datetime').textContent = currentDateTime;
+        }
         
+      setInterval(updateDateTime, 1000);
+    
     </script>
             
         </body>
