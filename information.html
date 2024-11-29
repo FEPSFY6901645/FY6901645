@@ -1,5 +1,38 @@
 <!DOCTYPE html>
+<h1 style="color:white; font-size:15px"> Current date and time</h1>
+    <span style="color:white"; id="datetime"></span>
 <script>
+        function updateDateTime() {
+
+            const now =new Date();
+            
+            const currentDateTime = now.toLocaleString();
+
+            document.querySelector('#datetime').textContent = currentDateTime;
+        }
+        
+      setInterval(updateDateTime, 1000);
+    
+    </script>
+<script>
+<table>
+
+        <tr>
+            <th><h3> Table of contents</h3></th>
+        </tr>
+        <tr>
+            <td><a href="#abstract"> Abstract</td>
+        </tr>
+        <tr>
+            <td><a href="#Introduction">Introduction</td>
+        <tr>
+            <td><a href="#Analysis and discussion">Analysis and discussion</td>
+        </tr>
+
+        <tr>
+            <td><a href="#references"> References</td>
+        </tr>
+</table>  
 MathJax = {
   tex: {
     inlineMath: [['$', '$'], ['\\(', '\\)']]
@@ -70,40 +103,10 @@ MathJax = {
 
 
                 
-    <table>
-
-        <tr>
-            <th><h3> Table of contents</h3></th>
-        </tr>
-        <tr>
-            <td><a href="#abstract"> Abstract</td>
-        </tr>
-        <tr>
-            <td><a href="#Introduction">Introduction</td>
-        <tr>
-            <td><a href="#Analysis and discussion">Analysis and discussion</td>
-        </tr>
-
-        <tr>
-            <td><a href="#references"> References</td>
-        </tr>
-    </table>
-    <h1 style="color:white; font-size:15px"> Current date and time</h1>
-    <span style="color:white"; id="datetime"></span>
-
-    <script>
-        function updateDateTime() {
-
-            const now =new Date();
-            
-            const currentDateTime = now.toLocaleString();
-
-            document.querySelector('#datetime').textContent = currentDateTime;
-        }
-        
-      setInterval(updateDateTime, 1000);
     
-    </script>
+    
+
+    
             
         </body>
      <nav class="container">
