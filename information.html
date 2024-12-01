@@ -1,26 +1,26 @@
 <!DOCTYPE html>
 
 
-<h1 style="color:white; font-size:15px; text-align: left">
-<img src="WebBanner2023.png" alt="Banner" width="150" height="50">
-	<head>My Paggge</head>
-<h2 style = "text-align:right";>
-	<script>
-			function updateDateTime() {
+<script>
+	<style = "color:red; font-size:30px; text-align:right">
+	function updateDateTime() {
 
-				const now =new Date();
-				
-				const currentDateTime = now.toLocaleString();
-
-				document.querySelector('#datetime').textContent = "Current Date and Time:" + currentDateTime;
-			}
-			
-		  setInterval(updateDateTime, 1000);
-	</script>
+		const now =new Date();
+		
+		const currentDateTime = "Current Date and Time:" + now.toLocaleString();
+	}
+  setInterval(updateDateTime, 1000);
+		  
+</script>
 
 
-</h2>
+<h1 style="color:white; font-size:15px">
+	<img src="WebBanner2023.png" alt="Banner" width="150" height="50">
+	<head>My Page</head>
+	document.querySelector('updateDateTime').textContent = currentDateTime;		
 </h1>
+
+
 <span style="color:white"; id="datetime";"></span>  
 <script>
 MathJax = {
