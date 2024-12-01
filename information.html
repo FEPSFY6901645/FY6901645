@@ -1,24 +1,22 @@
 <!DOCTYPE html>
 
-<script>
-	<style = "color:red; font-size:30px; text-align:right">
-	function updateDateTime() {
+<h1 style="color:white; font-size:15px; text-align: left">
+<img src="WebBanner2023.png" alt="Banner" width="150" height="50">
+	<head>My Page</head>
+	<h2 style = "text-align:right"
+		<script>
+				function updateDateTime() {
 
-		const now =new Date();
-		
-		const currentDateTime = "Current Date and Time:" + now.toLocaleString();
-	}
-  setInterval(updateDateTime, 1000);
-		  
-</script>
+					const now =new Date();
+					
+					const currentDateTime = now.toLocaleString();
 
-
-<h1 style="color:white; font-size:15px">
-	<img src="WebBanner2023.png" alt="Banner" width="150" height="50">
-	<head>T1</head>
-	<script>
-		document.querySelector('updateDateTime').textContent = currentDateTime;
-	</script>
+					document.querySelector('#datetime').textContent = "Current Date and Time:" + currentDateTime;
+				}
+				
+			  setInterval(updateDateTime, 1000);
+		</script>
+	</h2>
 </h1>
 
 <script>
