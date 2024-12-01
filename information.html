@@ -15,6 +15,20 @@ MathJax = {
   src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-svg.js">
 </script>
 
+<script>
+				function updateDateTime() {
+
+					const now =new Date();
+					
+					const currentDateTime = now.toLocaleString();
+
+					document.querySelector('#datetime').textContent = "Current Date and Time:" + currentDateTime;
+				}
+				
+			  setInterval(updateDateTime, 1000);
+</script>
+
+
 <head>
 <!--	<link rel="stylesheet" href="index.css"> -->
 	<title>6901645 conference project</title>
