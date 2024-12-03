@@ -17,7 +17,39 @@
             </video>
         
 
-
+ <!-- Placeholder for total word count -->
+<p id="totalWordCount"></p>
+<hr style="color:white";>
+<script>
+  // Function to calculate and display word count for a specified section
+  function displayWordCount(sectionId, outputId) {
+    // Get the text content from the specified section
+    const text = document.getElementById(sectionId).textContent;
+    // Split text into words based on spaces and filter out any empty strings
+    const wordArray = text.trim().split(/\s+/);
+    // Count the words
+    const wordCount = wordArray.length;
+    // Return the word count for summing purposes
+    return wordCount;
+  }
+  // Function to calculate and display total word count from selected sections
+  function displayTotalWordCount() {
+    // Calculate word count for each section and accumulate the total
+    const TheBasicsCount = displayWordCount("The_basics");
+    const IrafCount = displayWordCount("Inertial_frames_of_reference");
+    const TimeDilationCount = displayWordCount("Time_dilation");
+    const RaBsCount = displayWordCount("Red_and_Blue_shifts");
+    const WdbhgonlCount = displayWordCount("Why_do_black_holes_give_off_no_light");
+    const ConclusionCount = displayWordCount("_Conclusion");	  
+    // Calculate the sum of all selected sections
+    const totalWordCount = TheBasicsCount + IrafCount + TimeDilationCount + RaBsCount + WdbhgonlCount + ConclusionCount;
+    // Display the total word count
+    document.getElementById("totalWordCount").innerText = `Total word count: ${totalWordCount}`;
+    alert("Image is loaded");
+  }
+  // Run the function for specific sections and display total count when the page loads
+  window.onload = displayTotalWordCount;
+</script>    
        
      <nav class="container">
 
@@ -81,4 +113,5 @@
     // Initial load to display the time on page load
     window.onload = getLastUpdatedTime;
 </script>
+    
 </html>
