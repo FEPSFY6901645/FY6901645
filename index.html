@@ -32,10 +32,21 @@
   <!-- //////////////////////////////////////////////////////////////////////////////// -->
     <!-- Last commit time display -->
 <div id="last-updated">Loading last update time...</div>
-<!-- Verify Button -->
-<button onclick="verifyLastUpdatedTime()" style="display: block; margin: 10px auto; padding: 8px 16px;">
+<table style="position: absolute; bottom:5px; color:white">
+  <tr>
+      <td style="text-align:left">
+        <a href="references.html">‎ References‎ ‎ </a>
+      </td>
+      <td style="text-align:right">
+        <a href="information.html">‎ Information‎ ‎ </a>
+      </td>
+  </tr>   
+<tr><button onclick="verifyLastUpdatedTime()" style="display: block; margin: 10px auto; padding: 8px 16px;">
     Verify Last Modified Time
 </button>
+</tr>
+</table>
+<!-- Verify Button -->
 <script>
     async function getLastUpdatedTime() {
         const username = 'FEPSFY6901645';
@@ -75,16 +86,7 @@
     // Initial load to display the time on page load
     window.onload = getLastUpdatedTime;
 </script>
-<table>
-  <tr>
-      <td style="text-align:left">
-        <a href="references.html">‎ References‎ ‎ </a>
-      </td>
-      <td style="text-align:right">
-        <a href="information.html">‎ Information‎ ‎ </a>
-      </td>
-  </tr>   
-</table>
+
 
 
     </body>   
